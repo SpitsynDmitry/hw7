@@ -15,7 +15,7 @@ public class Main {
             String firstName = "Ivan";
             String middleName = "Ivanovich";
             String lastName = "Ivanov";
-            System.out.println(lastName + " " + firstName + " " + middleName);
+            System.out.println("ФИО сотрудника " + lastName + " " + firstName + " " + middleName);
 
             // Задача 2
             //Для подачи ежемесячного отчета и ведения документации нашей бухгалтерии нужны
@@ -30,8 +30,7 @@ public class Main {
             String s = fullName;
             String s1 = s.toUpperCase();
             //  перевод всех букв в верхний регистр
-            System.out.println(fullName);
-            System.out.println(s1);
+            System.out.println( "Данные ФИО сотрудника для заполнения отчета " + s1);
 
             // Задача 3
             //Система, в которой мы работаем, не принимает символ “ё”.
@@ -41,9 +40,9 @@ public class Main {
 
             System.out.println("Задача № 3");
             String fullName1 = "Иванов Семён Семёнович";
+            System.out.println("Данные ФИО сотрудника -" + fullName1.replace("ё","e"));
             fullName1 = fullName1.replace("ё","e");
             String [] words = fullName1.split (" ");
-
             for (int i = 0; i < words.length; i++)
             {
                 if (i == words.length - 1) {
@@ -53,6 +52,6 @@ public class Main {
                     System.out.print(words[i] + " ");
                 }
             }
-            System.out.println(fullName1);
+
         }
     }
